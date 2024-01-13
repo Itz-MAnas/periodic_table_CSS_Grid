@@ -1,0 +1,103 @@
+body{
+    background-color: white;
+}
+
+h1{
+    text-align: center;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+    grid-gap: 1px;
+    justify-content: center;
+}
+
+.main div p{
+    font-size: 10px;
+    margin-top: 35px;
+}
+
+
+
+
+.table1, .table2{
+    display: grid;
+    position: absolute;
+    left: 5%;
+
+}
+
+.table1{
+    grid-template-columns: repeat(18, 1fr);
+    top: 28%;
+    left: 15%;
+
+}
+
+.table2{
+    grid-template-columns: repeat(14, 1fr);
+    top: 90%; 
+    left: 26.5%;
+}
+
+.table1 > .element:nth-child(1){
+    grid-column-start: 1;
+    grid-column-end: 18;
+}
+
+.table1 > .element:nth-child(5), .element:nth-child(13){
+    grid-column: 13;
+}
+
+.element{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+}
+
+
+.title{
+    font-weight: bold;
+}
+
+
+.alkali{
+    background-color: khaki;
+}
+
+.alkaline{
+    background-color: burlywood;
+}
+
+.transition{
+    background-color: rgb(202, 145, 202);
+}
+
+.otherMetals{
+    background-color: lightpink;
+}
+
+.otherNon_Metals{
+    background-color: peachpuff;
+}
+
+.halogens{
+    background-color: rgb(96, 150, 96);
+}
+
+.rare{
+    background-color: rgb(225, 255, 134)
+}
+
+.acntinoid{
+    background-color: lightblue;
+}
+
+.noble{
+    background-color: white;
+}
